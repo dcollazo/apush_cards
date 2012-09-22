@@ -1,0 +1,5 @@
+%ul
+  - @cards.each do |card|
+    %li= link_to truncate(card.question, length: 15 ), card_path(card)
+= link_to 'New card.', new_card_path
+

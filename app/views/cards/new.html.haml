@@ -1,0 +1,13 @@
+%h1 new question
+
+= form_for @card do |f|
+  %fieldset
+    = f.label :question
+    =f.text_area :question
+  %fieldset
+    = f.label :answer
+    = f.text_field :answer
+  .button
+    = f.submit  'Create card.'
+
+
